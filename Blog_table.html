@@ -212,7 +212,7 @@
                                 <li><a class="nav-link" href="./importTool.html">ImportTool</a></li>
                                 <li><a class="nav-link" href="./form.html">Import Jobs Form</a></li>
                             </ul>
-                        </li>>
+                        </li>
                         <li class="dropdown">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i
                                     data-feather="mail"></i><span>Manage Companies</span></a>
@@ -410,72 +410,58 @@
                     <div class="section-body">
                         <div class="row">
                             <div class="col-12">
-                                <!-- Font Awesome CSS (head me include karein) -->
-
-
-
-                                <!-- Upload Form -->
-
-                                <!-- SEEKER PACKAGES DATA TABLE -->
-                              
-                                <!-- SEEKER PACKAGES DATA TABLE -->
-                                <div class="container mt-4">
-                                    <div class="card shadow-sm border-0 rounded-3">
+                                <div class="container ">
+                                    <div class="card shadow-sm">
                                         <div
-                                            class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+                                            class="card-header bg-secondary text-white d-flex justify-content-between align-items-center">
                                             <div>
-                                                <i class="fas fa-user-tie me-2"></i>
-                                                <strong>Manage Seeker Packages</strong>
+                                                <i class="fas fa-database"></i> Blog List
                                             </div>
-                                            <button class="btn btn-success btn-sm">
-                                                <i class="fas fa-plus-circle me-1"></i> Add Package
-                                            </button>
+                                        <a href="./Blog_form.html"><button class="btn btn-success btn-sm">
+                                                <i class="fas fa-plus"></i> Add New Blog
+                                            </button></a>    
                                         </div>
                                         <div class="card-body">
-                                            <table class="table table-bordered table-hover align-middle">
-                                                <thead class="table-light">
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th><i class="fas fa-id-badge me-1 text-primary"></i> Package
-                                                            Name</th>
-                                                        <th><i class="fas fa-briefcase me-1 text-success"></i> Allowed
-                                                            Applications</th>
-                                                        <th><i class="fas fa-clock me-1 text-warning"></i> Duration</th>
-                                                        <th><i class="fas fa-dollar-sign me-1 text-info"></i> Price</th>
-                                                        <th><i class="fas fa-toggle-on me-1 text-danger"></i> Status
-                                                        </th>
-                                                        <th><i class="fas fa-cogs me-1"></i> Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Premium Starter</td>
-                                                        <td>20</td>
-                                                        <td>30 Days</td>
-                                                        <td>$30</td>
-                                                        <td><span class="badge bg-success"><i
-                                                                    class="fas fa-check-circle"></i> Active</span></td>
-                                                        <td>
-                                                            <button class="btn btn-sm btn-info"><i
-                                                                    class="fas fa-eye"></i></button>
-                                                            <button class="btn btn-sm btn-warning"><i
-                                                                    class="fas fa-edit"></i></button>
-                                                            <button class="btn btn-sm btn-danger"><i
-                                                                    class="fas fa-trash"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped" id="table-1">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><i class="fas fa-hashtag"></i> ID</th>
+                                                            <th><i class="fas fa-heading"></i> Title</th>
+
+                                                            <th><i class="fas fa-image"></i> Image</th>
+                                                            <th><i class="fas fa-file-alt"></i> Content</th>
+                                                            <th><i class="fas fa-calendar-alt"></i> Date</th>
+                                                            <th><i class="fas fa-cogs"></i> Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>First Blog Post</td>
+                                                            <td>
+                                                                <img src="./assets/img/blog/img05.png" alt="Blog Image"
+                                                                    class="img-thumbnail"
+                                                                    style="width:60px; height:60px; object-fit:cover;">
+                                                            </td>
+
+                                                            <td>Short excerpt of content...</td>
+                                                            <td>2025-08-26</td>
+                                                            <td>
+                                                                <button class="btn btn-sm btn-info"><i
+                                                                        class="fas fa-eye"></i></button>
+                                                                <button class="btn btn-sm btn-warning"><i
+                                                                        class="fas fa-edit"></i></button>
+                                                                <button class="btn btn-sm btn-danger"><i
+                                                                        class="fas fa-trash"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
-
-
 
 
                             </div>
@@ -606,7 +592,6 @@
     <script src="assets/js/custom.js"></script>
 </body>
 
+</html>
 
 <!-- export-table.html  21 Nov 2019 03:56:01 GMT -->
-
-</html>

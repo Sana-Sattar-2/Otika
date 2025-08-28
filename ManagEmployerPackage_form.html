@@ -212,7 +212,7 @@
                                 <li><a class="nav-link" href="./importTool.html">ImportTool</a></li>
                                 <li><a class="nav-link" href="./form.html">Import Jobs Form</a></li>
                             </ul>
-                        </li>>
+                        </li>
                         <li class="dropdown">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i
                                     data-feather="mail"></i><span>Manage Companies</span></a>
@@ -410,68 +410,105 @@
                     <div class="section-body">
                         <div class="row">
                             <div class="col-12">
-                                <!-- Font Awesome CSS (head me include karein) -->
-
-
-
-                                <!-- Upload Form -->
-
-                                <!-- SEEKER PACKAGES DATA TABLE -->
-                              
-                                <!-- SEEKER PACKAGES DATA TABLE -->
+                                <!-- EMPLOYER PACKAGES DATA TABLE -->
+                                <!-- EMPLOYER PACKAGE FORM -->
                                 <div class="container mt-4">
                                     <div class="card shadow-sm border-0 rounded-3">
-                                        <div
-                                            class="card-header bg-info text-white d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <i class="fas fa-user-tie me-2"></i>
-                                                <strong>Manage Seeker Packages</strong>
-                                            </div>
-                                            <button class="btn btn-success btn-sm">
-                                                <i class="fas fa-plus-circle me-1"></i> Add Package
-                                            </button>
+                                        <div class="card-header bg-primary text-white d-flex align-items-center">
+                                            <i class="fas fa-plus-circle me-2"></i>
+                                            <h5 class="mb-0">Add / Edit Employer Package</h5>
                                         </div>
                                         <div class="card-body">
-                                            <table class="table table-bordered table-hover align-middle">
-                                                <thead class="table-light">
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th><i class="fas fa-id-badge me-1 text-primary"></i> Package
-                                                            Name</th>
-                                                        <th><i class="fas fa-briefcase me-1 text-success"></i> Allowed
-                                                            Applications</th>
-                                                        <th><i class="fas fa-clock me-1 text-warning"></i> Duration</th>
-                                                        <th><i class="fas fa-dollar-sign me-1 text-info"></i> Price</th>
-                                                        <th><i class="fas fa-toggle-on me-1 text-danger"></i> Status
-                                                        </th>
-                                                        <th><i class="fas fa-cogs me-1"></i> Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Premium Starter</td>
-                                                        <td>20</td>
-                                                        <td>30 Days</td>
-                                                        <td>$30</td>
-                                                        <td><span class="badge bg-success"><i
-                                                                    class="fas fa-check-circle"></i> Active</span></td>
-                                                        <td>
-                                                            <button class="btn btn-sm btn-info"><i
-                                                                    class="fas fa-eye"></i></button>
-                                                            <button class="btn btn-sm btn-warning"><i
-                                                                    class="fas fa-edit"></i></button>
-                                                            <button class="btn btn-sm btn-danger"><i
-                                                                    class="fas fa-trash"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <form>
+                                                <!-- Package Name -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">
+                                                        <i class="fas fa-box me-1 text-primary"></i> Package Name
+                                                    </label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter package name">
+                                                </div>
+
+                                                <!-- Job Posts -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">
+                                                        <i class="fas fa-briefcase me-1 text-success"></i> Number of Job
+                                                        Posts
+                                                    </label>
+                                                    <input type="number" class="form-control" placeholder="e.g. 10">
+                                                </div>
+
+                                                <!-- Duration -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">
+                                                        <i class="fas fa-clock me-1 text-warning"></i> Duration
+                                                    </label>
+                                                    <select class="form-select">
+                                                        <option value="">Select Duration</option>
+                                                        <option>15 Days</option>
+                                                        <option>30 Days</option>
+                                                        <option>60 Days</option>
+                                                        <option>90 Days</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">
+                                                        <i class="fas fa-dollar-sign me-1 text-info"></i> Price
+                                                    </label>
+                                                    <input type="text" class="form-control" placeholder="$ Enter price">
+                                                </div>
+
+                                                <!-- Features -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">
+                                                        <i class="fas fa-list me-1 text-secondary"></i> Features
+                                                    </label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="highlight">
+                                                        <label class="form-check-label" for="highlight">
+                                                            Highlight Job Posts
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="urgent">
+                                                        <label class="form-check-label" for="urgent">
+                                                            Urgent Tag for Jobs
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="support">
+                                                        <label class="form-check-label" for="support">
+                                                            Premium Support
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Status -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">
+                                                        <i class="fas fa-toggle-on me-1 text-danger"></i> Status
+                                                    </label>
+                                                    <select class="form-select">
+                                                        <option value="1">Active</option>
+                                                        <option value="0">Inactive</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- Buttons -->
+                                                <div class="d-flex justify-content-between">
+                                                    <button type="submit" class="btn btn-primary">
+                                                        <i class="fas fa-save me-1"></i> Save Package
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary">
+                                                        <i class="fas fa-undo me-1"></i> Reset
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-
-
 
 
 
@@ -606,7 +643,6 @@
     <script src="assets/js/custom.js"></script>
 </body>
 
+</html>
 
 <!-- export-table.html  21 Nov 2019 03:56:01 GMT -->
-
-</html>
