@@ -409,54 +409,42 @@
                 <section class="section">
                     <div class="section-body">
                         <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-    <div class="card-header">
-        <h5>Countries</h5>
-    </div>
-    <div class="card-body">
-        <table class="table table-bordered" id="table-1">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Country Name</th>
-                    <th>ISO Code</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Pakistan</td>
-                    <td>PK</td>
-                    <td>Active</td>
-                    <td>
-                       <div class="dropdown d-inline">
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton2" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
-                                                        Action
-                                                    </button>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item has-icon" href="#"> <i
-                                                                class="fas fa-edit"></i>Edit</a>
-                                                        <a class="dropdown-item has-icon" href="#"> <i
-                                                                class="fas fa-trash"></i>
-                                                            Delete</a>
-                                                      
-                                                    </div>
-                                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+                            <div class="container ">
+                                <h5 class="mb-4">Add / Edit Job Attribute</h5>
 
-
-
+                                <div class="card shadow-sm">
+                                    <div class="card-header bg-primary text-white">
+                                        <i class="bi bi-gear"></i> Job Attribute Form
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label class="form-label">Attribute Name</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="e.g. Job Type, Experience Level, Industry">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Attribute Value</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="e.g. Full-Time, 2 Years, IT">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Status</label>
+                                                <select class="form-select">
+                                                    <option value="active">Active</option>
+                                                    <option value="inactive">Inactive</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-success"><i class="bi bi-save"></i>
+                                                Save Attribute</button>
+                                            <button type="reset" class="btn btn-secondary"><i
+                                                    class="bi bi-x-circle"></i> Reset</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                 </section>
@@ -584,6 +572,7 @@
     <script src="assets/js/custom.js"></script>
 </body>
 
-</html>
 
 <!-- export-table.html  21 Nov 2019 03:56:01 GMT -->
+
+</html>
