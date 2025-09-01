@@ -410,7 +410,6 @@
                     <div class="section-body">
                         <div class="row">
                             <div class="container ">
-                                <h5 class="mb-4">Add / Edit Job Attribute</h5>
 
                                 <div class="card shadow-sm">
                                     <div class="card-header bg-primary text-white">
@@ -428,13 +427,14 @@
                                                 <input type="text" class="form-control"
                                                     placeholder="e.g. Full-Time, 2 Years, IT">
                                             </div>
-                                            <div class="mb-3">
-                                                <label class="form-label">Status</label>
-                                                <select class="form-select">
-                                                    <option value="active">Active</option>
-                                                    <option value="inactive">Inactive</option>
-                                                </select>
-                                            </div>
+                                             <!-- Status -->
+                <div class="mb-3">
+                    <label for="status" class="form-label">Status</label>
+                    <select class="form-control  " id="status" name="status" required>
+                        <option value="1">Active</option>
+                        <option value="0">Inactive</option>
+                    </select>
+                </div>
                                             <button type="submit" class="btn btn-success"><i class="bi bi-save"></i>
                                                 Save Attribute</button>
                                             <button type="reset" class="btn btn-secondary"><i

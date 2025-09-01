@@ -416,7 +416,7 @@
                                         <h5 class="mb-0">Cities</h5>
                                     </div>
                                     <div class="card-body">
-                                        <table class="table table-bordered table-hover align-middle" id="table-1">
+                                        <table class="table table-bordered table-hover align-middle" id="tableExport">
                                             <thead class="table-light">
                                                 <tr>
                                                     <th>#</th>
@@ -439,15 +439,21 @@
                                                         </span>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-sm btn-info">
-                                                            <i class="fas fa-eye"></i>
-                                                        </button>
-                                                        <button class="btn btn-sm btn-warning">
-                                                            <i class="fas fa-edit"></i>
-                                                        </button>
-                                                        <button class="btn btn-sm btn-danger">
-                                                            <i class="fas fa-trash"></i>
-                                                        </button>
+                                                        <div class="dropdown d-inline">
+                                                            <button class="btn btn-primary dropdown-toggle"
+                                                                type="button" id="dropdownMenuButton2"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
+                                                                Action
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item has-icon" href="#"> <i
+                                                                        class="fas fa-edit"></i>Edit</a>
+                                                                <a class="dropdown-item has-icon" href="#"> <i
+                                                                        class="fas fa-trash"></i>
+                                                                    Delete</a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </tbody>

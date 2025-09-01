@@ -427,7 +427,7 @@
                     <i class="fas fa-file-alt me-2"></i> Manage Content Pages
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered table-hover align-middle" id="table-1">
+                    <table class="table table-bordered table-hover align-middle" id="tableExport">
                         <thead >
                             <tr>
                                 <th>#</th>
@@ -446,35 +446,20 @@
                                 <td>2025-08-20</td>
                                 <td><span class="badge bg-success">Active</span></td>
                                 <td>
-                                    <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
-                                    <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                                    <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Action
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item has-icon" href="#"> <i class="fas fa-edit"></i>Edit</a>
+                                  <a class="dropdown-item has-icon" href="#"> <i class="fas fa-trash"></i>
+                                    Delete</a>
+                                </div>
+                              </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Contact Us</td>
-                                <td>contact</td>
-                                <td>2025-08-25</td>
-                                <td><span class="badge bg-success">Active</span></td>
-                                <td>
-                                    <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
-                                    <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Terms & Conditions</td>
-                                <td>terms</td>
-                                <td>2025-08-28</td>
-                                <td><span class="badge bg-secondary">Inactive</span></td>
-                                <td>
-                                    <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
-                                    <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-                                </td>
-                            </tr>
+                     
                         </tbody>
                     </table>
                 </div>

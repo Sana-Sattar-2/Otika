@@ -422,7 +422,7 @@
         </div>
         <div class="card-body">
            <div class="table-responsive">
-                                                <table class="table table-striped" id="table-1">
+                                                <table class="table table-striped" id="tableExport">
                     <thead>
                         <tr>
                             <th><i class="fas fa-hashtag"></i> ID</th>
@@ -441,8 +441,17 @@
                             <td>en</td>
                             <td><span class="badge bg-success">Active</span></td>
                             <td>
-                                <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
-                                <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                                <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Action
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item has-icon" href="#"> <i class="fas fa-edit"></i>Edit</a>
+                                  <a class="dropdown-item has-icon" href="#"> <i class="fas fa-trash"></i>
+                                    Delete</a>
+                                </div>
+                              </div>
                             </td>
                         </tr>
                         <tr>
@@ -452,8 +461,17 @@
                             <td>ur</td>
                             <td><span class="badge bg-secondary">Inactive</span></td>
                             <td>
-                                <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
-                                <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                          <div class="dropdown d-inline">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Action
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item has-icon" href="#"> <i class="fas fa-edit"></i>Edit</a>
+                                  <a class="dropdown-item has-icon" href="#"> <i class="fas fa-trash"></i>
+                                    Delete</a>
+                                </div>
+                              </div>
                             </td>
                         </tr>
                     </tbody>
