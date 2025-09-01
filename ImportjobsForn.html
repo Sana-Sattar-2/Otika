@@ -203,30 +203,33 @@
                                 <li><a class="nav-link" href="./addNewadmin.html">Add New admin</a></li>
                             </ul>
                         </li>
-                          <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="command"></i><span>Jobs</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./jobs.html">Manage Jobs</a></li>
-                <li><a class="nav-link" href="./ImportJobs.html">Import Jobs</a></li>
-                <li><a class="nav-link" href="./importTool.html">ImportTool</a></li>
-                <li><a class="nav-link" href="./form.html">Import Jobs Form</a></li>
-              </ul>
-            </li>
                         <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>Manage Companies</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./manageCompany.html">Manage Companies</a></li>
-                <li><a class="nav-link" href="./managecompanyForm.htm">Add Company</a></li>
-                <li><a class="nav-link" href="./editCompany.html">Edit Company</a></li>
-              </ul>
-            </li>
-                          <li class="menu-header">Manage </li>
-                        <li class="dropdown">
-                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Manage Seeker  </span></a>
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                    data-feather="command"></i><span>Jobs</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="./manageSeeker.html">Manage 
-                                    seeker  profile
-                                </a></li>
+                                <li><a class="nav-link" href="./jobs.html">Manage Jobs</a></li>
+                                <li><a class="nav-link" href="./ImportJobs.html">Import Jobs</a></li>
+                                <li><a class="nav-link" href="./importTool.html">ImportTool</a></li>
+                                <li><a class="nav-link" href="./form.html">Import Jobs Form</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                    data-feather="mail"></i><span>Manage Companies</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manageCompany.html">Manage Companies</a></li>
+                                <li><a class="nav-link" href="./managecompanyForm.htm">Add Company</a></li>
+                                <li><a class="nav-link" href="./editCompany.html">Edit Company</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-header">Manage </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                    data-feather="copy"></i><span>Manage Seeker </span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manageSeeker.html">Manage
+                                        seeker profile
+                                    </a></li>
                                 <li><a class="nav-link" href="badge.html">Badge</a></li>
                                 <li><a class="nav-link" href="breadcrumb.html">Breadcrumb</a></li>
                                 <li><a class="nav-link" href="buttons.html">Buttons</a></li>
@@ -412,58 +415,59 @@
 
 
                                 <!-- Upload Form -->
-                         
 
-  <div class="card shadow rounded">
-    <div class="card-header bg-primary text-white">
-      <h5 class="mb-0"> Import Jobs  Form</h5>
-    </div>
-    <div class="card-body">
 
-      <form action="#" method="post" enctype="multipart/form-data">
-        <!-- Upload CSV File -->
-        <div class="mb-3">
-          <label class="form-label">Upload Jobs File (CSV/Excel)</label>
-          <input type="file" name="jobs_file" class="form-control" accept=".csv, .xlsx" required>
-          <div class="form-text">Allowed formats: .csv, .xlsx</div>
-        </div>
+                                <div class="card shadow rounded">
+                                    <div class="card-header bg-primary text-white">
+                                        <h5 class="mb-0"> Import Jobs Form</h5>
+                                    </div>
+                                    <div class="card-body">
 
-        <!-- Department -->
-           <div class="form-group">
-                      <label>Select Department</label>
-                      <select class="form-control">
-                        <option>IT</option>
-                        <option>HR</option>
-                        <option>Marketing</option>
-                      </select>
-                    </div>
+                                        <form action="#" method="post" enctype="multipart/form-data">
+                                            <!-- Upload CSV File -->
+                                            <div class="mb-3">
+                                                <label class="form-label">Upload Jobs File (CSV/Excel)</label>
+                                                <input type="file" name="jobs_file" class="form-control"
+                                                    accept=".csv, .xlsx" required>
+                                                <div class="form-text">Allowed formats: .csv, .xlsx</div>
+                                            </div>
 
-        <!-- Is Active -->
-     <div class="form-group">
-                      <label>Is Active?</label>
-                      <select class="form-control">
-                        <option>yes</option>
-                        <option>No</option>
-                      </select>
-                    </div>
+                                            <!-- Department -->
+                                            <div class="form-group">
+                                                <label>Select Department</label>
+                                                <select class="form-control">
+                                                    <option>IT</option>
+                                                    <option>HR</option>
+                                                    <option>Marketing</option>
+                                                </select>
+                                            </div>
 
-        <!-- Is Featured -->
-        <div class="form-group">
-                      <label>Is Feature</label>
-                      <select class="form-control">
-                       <option>yes</option>
-                        <option>No</option>
-                      </select>
-                    </div>
-        <!-- Submit -->
-        <div class="d-flex justify-content-between">
-          <a href="./jobs.html" class="btn btn-secondary">⬅ Back to Jobs</a>
-          <button type="submit" class="btn btn-success">⬆ Import Jobs</button>
-        </div>
-      </form>
+                                            <!-- Is Active -->
+                                            <div class="form-group">
+                                                <label>Is Active?</label>
+                                                <select class="form-control">
+                                                    <option>yes</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
 
-    </div>
-  </div>
+                                            <!-- Is Featured -->
+                                            <div class="form-group">
+                                                <label>Is Feature</label>
+                                                <select class="form-control">
+                                                    <option>yes</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                            <!-- Submit -->
+                                            <div class="d-flex justify-content-between">
+                                                <a href="./jobs.html" class="btn btn-secondary">⬅ Back to Jobs</a>
+                                                <button type="submit" class="btn btn-success">⬆ Import Jobs</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
 
 
 

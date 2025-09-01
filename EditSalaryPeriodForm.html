@@ -323,56 +323,50 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-body">
-                     <div class="row g-3 mb-4">
-  <div class="col-lg-12">
-    <div class="card shadow-sm border-0 rounded-3">
-      <div class="card-header bg-info text-white">
-        <i class="fas fa-briefcase me-2"></i> Ownership Types
-      </div>
-      <div class="card-body">
-        <div class="table-responsive">
-          <table id="tableExport" class="table table-bordered table-striped">
-            <thead class="table-light">
-              <tr>
-                <th>#</th>
-                <th>Ownership Type</th>
-                <th>Discription</th>
-                <th>Status</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Private</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, fugit?</td>
-                <td><span class="badge bg-success text-white">Active</span></td>
-                <td>
-                  <div class="dropdown d-inline">
-                    <button class="btn btn-info dropdown-toggle" type="button"
-                      id="dropdownMenuButton1" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Action
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item has-icon" href="#">
-                        <i class="fas fa-edit"></i> Edit
-                      </a>
-                      <a class="dropdown-item has-icon" href="#">
-                        <i class="fas fa-trash"></i> Delete
-                      </a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                        <div class="container mt-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-8">
+                                    <div class="card shadow-sm border-0 rounded-3">
+                                        <div class="card-header bg-success text-white">
+                                            <h5 class="mb-0"><i class="fas fa-money-bill-wave me-2"></i> Edit Salary
+                                                Period</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <!-- Salary Period -->
+                                                <div class="form-group mb-3">
+                                                    <label>Salary Period</label>
+                                                    <input type="text" class="form-control" value="Monthly">
+                                                </div>
+
+                                                <!-- Description -->
+                                                <div class="form-group mb-3">
+                                                    <label>Description</label>
+                                                    <textarea class="form-control"
+                                                        rows="3">Salary will be paid every month</textarea>
+                                                </div>
+
+                                                <!-- Status -->
+                                                <div class="form-group mb-3">
+                                                    <label>Status</label>
+                                                    <select class="form-control">
+                                                        <option selected>Active</option>
+                                                        <option>Inactive</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- Buttons -->
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-secondary me-2" style="margin-right: 10px;">Cancel</button>
+                                                    <button type="submit" class="btn btn-success">Update</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
 
 
